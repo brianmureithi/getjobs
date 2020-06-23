@@ -1,0 +1,16 @@
+@media screen and (max-width: 960px) {      
+ .content,.comments {padding: 1% 5%;}    
+ .content {width: 100%;}    
+ .comments {width: 100%;} } 
+ @media screen and (min-width: 961px) and (max-width: 1280px) {   
+
+ .content,.comments {padding: 1% 5%;}   
+ .content {width: 66.66%;}    
+ .comments {width: 66.33%;} } 
+@media screen and (min-width: 1281px) {    
+ 
+  .content,.comments {padding:1% 1% 1% 0}     .content {          width: 73%;          margin-left: 14px;     }    
+  .comments { width: 54%;} } .content,.comments {    
+  float: left;   
+  text-align: justify; } 
+  .comment {padding-left: 8%;} 
