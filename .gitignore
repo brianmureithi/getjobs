@@ -1,0 +1,5 @@
+#ignore profile pictures
+assets/profile/
+
+#ignore uploaded files
+uploadedfiles/
