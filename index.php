@@ -4,11 +4,15 @@ require_once('functions.php');
 <html>
 <head>
 <title>Kazikwetu</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/textbox.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/textbox.css"/>
+<script src="js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <style>
 * {
   box-sizing: border-box;
@@ -30,7 +34,7 @@ require_once('functions.php');
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid" >
+  <div class="container-fluid" style="background-color:#B22222 !important">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.php" style="color:#fff;font-family:Roboto">Kazikwetu</a>
     </div>
@@ -38,8 +42,8 @@ require_once('functions.php');
 			  <li class="active"><a href="index.php" style="color:fff">Home</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li><a href="signup.php">Expert</a></li>
-				  <li><a href="login_user.php" >Looking for expert</a></li>
+				  <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>
@@ -51,7 +55,7 @@ require_once('functions.php');
   </div>
 </nav>
   
-	<div class="container" id="bootstrap-override">
+	<div class="container">
 					<div class="row">
 				  <div class="column">
 					<img src="assets/img11.jpg" alt="Snow" style="width:100%">
@@ -79,13 +83,13 @@ You are here probably because you have been looking for a job for quite sometime
 </div>
 <div class="col-xs-6">
 			<div class=" well search-icon form-group">
-			<label for="sel1" style="margin-right:15px">Expert: </label> 
+			<label for="sel1" style="margin-right:15px">Expert: <label/> 
 				<select class="form-control" id="sel1" name="expert" onchange="open_module();" style="min-width:200px !important;min-height:30px;">
 				<?php  Kazikwetu::getexpertise();?>
                   </select>
 				  </div>
 			<div class=" well search-icon form-group">
-		  <label for="sel1">Location: </label> 
+		  <label for="sel1">Location: <label/> 
 		<select class="form-control" id="sel2" name="expert" onchange="open_module();" style="min-width:200px!important;min-height:30px;">
 		<?php  Kazikwetu::getcounties();?>
 		  </select>
@@ -169,11 +173,6 @@ function open_module2(){
   
 }
 </script>
-
-<script src="js/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </body>

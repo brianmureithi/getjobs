@@ -22,8 +22,8 @@
 			  <li><a href="index.php" style="color:fff">Home</a></li>
 			  <li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <liclass="active"><a href="login.php">Expert</a></li>
-				  <li><a href="login.php" >Looking for expert</a></li>
+				  <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>
