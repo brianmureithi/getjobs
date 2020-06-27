@@ -5,6 +5,8 @@ require_once('functions.php');
 <head>
 <title>Kazikwetu</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+ 
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/textbox.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -174,6 +176,8 @@ function open_module2(){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
 
 
 </body>
