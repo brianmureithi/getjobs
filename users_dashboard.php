@@ -25,7 +25,8 @@
 			  <li  class="active" ><a href="users_dashboard.php" style="color:fff">Dashboard</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="users_logout.php">Logout <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				 
+				  <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>

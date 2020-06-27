@@ -42,8 +42,8 @@ require_once('functions.php');
 			  <li class="active"><a href="index.php" style="color:fff">Home</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li><a href="signup.php">Expert</a></li>
-				  <li><a href="user_login.php" >Looking for expert</a></li>
+				  <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>
