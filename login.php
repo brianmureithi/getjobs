@@ -1,27 +1,23 @@
 <html>
 <head>
 <title>Kazikwetu</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-<script src="js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</style>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="background-color:#B22222 !important">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php" style="color:#fff;font-family:Roboto">Kazikwetu</a>
+      <a class="navbar-brand" href="index.php">Kazikwetu</a>
     </div>
 			<ul class="nav navbar-nav">
 			  <li><a href="index.php" style="color:fff">Home</a></li>
 			  <li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				  <li ><a href="login.php">Expert</a></li>
-				  <li  class="active"><a href="login.php" >Looking for expert</a></li>
+				  <li  class="active"><a href="login_user.php" >Looking for expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>
@@ -40,9 +36,9 @@
 	<div class="row vertical-offset-100">
 			<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default">
-									<div class=panel-heading"> 
+									<div class="panel-heading"> 
 										<h3 class="panel-title" style="padding-left:6px; padding-top:5px; font-family:Roboto;font-size:22px;"><center>Please Login Below</center></h3>
-												<hr/ style="color:#000000">
+												<hr style="color:#000000"/>
 									</div>
 						<div class="panel-body"> 
 								<form action="login_exec.php" accept-charset="UTF-8"  role="form" enctype="multipart/form-data" method="POST">
@@ -92,6 +88,10 @@
 <h5 class="text-primary" style="float">This site has been built by Brian murithi &copy; 2020</h5>
 </div>
 	  </div>
+	  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
 	
 	
 	

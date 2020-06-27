@@ -32,11 +32,11 @@ require_once('functions.php');
 <nav class="navbar navbar-inverse">
   <div class="container-fluid" >
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php" style="color:#fff;font-family:Roboto">Kazikwetu</a>
+      <a class="navbar-brand" href="index.php">Kazikwetu</a>
     </div>
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="index.php" style="color:fff">Home</a></li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Portal <span class="caret"></span></a>
+			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				  <li><a href="signup.php">Expert</a></li>
 				  <li><a href="login_user.php" >Looking for expert</a></li>
@@ -170,9 +170,9 @@ function open_module2(){
 }
 </script>
 
-<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 

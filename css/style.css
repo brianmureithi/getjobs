@@ -2,9 +2,9 @@ nav.navbar.navbar-inverse{
     position: fixed;
     border-radius: 0%;
     width: 100%;
-    z-index: 0;
+    z-index: 2;
 }
-div#bootstrap-override{
+div#bootstrap-override,nav+div{
     padding-top: 5%;
     z-index: 1;
 }
@@ -12,4 +12,24 @@ div#bootstrap-override{
     nav.navbar.navbar-inverse{
         position: relative;
     }
+}
+@font-face {
+    font-family: '3dumbregular';
+    src: url('../assets/fonts/3dumb-webfont.woff2') format('woff2'),
+         url('../assets/fonts/3dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+div.navbar-header a.navbar-brand{
+    font-family: '3dumbregular';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+}
+
+div.navbar-header a.navbar-brand:hover{
+    color: rgb(189, 179, 88);
 }
