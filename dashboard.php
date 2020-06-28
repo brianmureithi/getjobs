@@ -25,7 +25,7 @@ include "work_submit_exec.php";
       <a class="navbar-brand" href="index.php">Kazikwetu</a>
     </div>
 			<ul class="nav navbar-nav">
-			  <li  class="active" ><a href="Dashboar.php" style="color:fff">Dashboard</a></li>
+			  <li  class="active" ><a href="Dashboard.php" style="color:fff">Dashboard</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="experts_logout.php">Logout <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				 

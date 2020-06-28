@@ -21,7 +21,8 @@ include "session.php";
 			  <li  class="active" ><a href="work_submission.php" style="color:fff">Work-Submision</a></li>
 			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Logout <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				 
+				  <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>

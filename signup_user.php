@@ -17,8 +17,8 @@
 			  <li><a href="index.php" style="color:fff">Home</a></li>
 			  <li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li class="active"><a href="login.php">Expert</a></li>
-				  <li><a href="login_user.php" >Looking for expert</a></li>
+				 <li><a href="login_user.php">Client</a></li>
+				  <li><a href="login.php" >Expert</a></li>
 				</ul>
 			  </li>
 			  <li><a href="contact.php">Contact us</a></li>
@@ -36,7 +36,7 @@
     <form action="userssignup_exec.php" method="post" id="fileform" role="form" enctype="multipart/form-data">
     <fieldset><legend class="text-center" style="font-family:Roboto;font-size:25px;color:#8b0000"><i>Users signup, 
     <span class="req">
-    welcome to our community</i></span></legend>  s
+    welcome to our community</i></span></legend>  
      <!-- <div class="form-group">
       <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
       <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
