@@ -7,26 +7,22 @@ include "work_submit_exec.php";
 <title>Kazikwetu</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-<script src="js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</style>
 <link rel="stylesheet" type="text/css" href="css/styledash.css"/>
 <style>
  @media screen and (max-width: 960px) {…} 
-@media screen and (min-width: 961px) and (max-width: 1024px) {…} 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {…}
+ @media screen and (min-width: 961px) and (max-width: 1024px) {…} 
+ @media screen and (min-width: 1025px) and (max-width: 1280px) {…}
  @media screen and (min-width: 1281px) {…} 
  </style>
  
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="background-color:#B22222 !important">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php" style="color:#fff;font-family:Roboto">Kazikwetu</a>
+      <a class="navbar-brand" href="index.php">Kazikwetu</a>
     </div>
 			<ul class="nav navbar-nav">
 			  <li  class="active" ><a href="Dashboard.php" style="color:fff">Dashboard</a></li>
@@ -102,8 +98,12 @@ include "work_submit_exec.php";
 <h5 class="text-primary" style="float">This site has been built by Brian murithi &copy; 2020</h5>
 </div>
 	  </div>
+	  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
-	
+	<script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
 	
 	
 	

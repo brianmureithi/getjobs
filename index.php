@@ -36,11 +36,11 @@ require_once('functions.php');
 <nav class="navbar navbar-inverse">
   <div class="container-fluid" style="background-color:#B22222 !important">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.php" style="color:#fff;font-family:Roboto">Kazikwetu</a>
+      <a class="navbar-brand" href="index.php">Kazikwetu</a>
     </div>
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="index.php" style="color:fff">Home</a></li>
-			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Portal <span class="caret"></span></a>
+			  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 				  <li><a href="login_user.php">Client</a></li>
 				  <li><a href="login.php" >Expert</a></li>
@@ -173,6 +173,7 @@ function open_module2(){
   
 }
 </script>
+
 
 
 </body>

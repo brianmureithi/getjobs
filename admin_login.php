@@ -17,18 +17,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="sell car Online, Buy car Online, Need to sell a car, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 <link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<div class="header">
+  <div class="header">
 			
 			<div class="container">
 				<nav class="navbar navbar-default">
@@ -66,9 +62,9 @@
 	<div class="row vertical-offset-100">
 			<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default">
-									<div class=panel-heading"> 
+									<div class="panel-heading"> 
 										<h3 class="panel-title" style="padding-left:6px; padding-top:5px; font-family:Roboto;font-size:22px;"><center>Please Login Below</center></h3>
-												<hr/ style="color:#000000">
+												<hr style="color:#000000"/>
 									</div>
 						<div class="panel-body"> 
 								<form action="login_exec.php" accept-charset="UTF-8"  role="form" enctype="multipart/form-data" method="POST">
@@ -106,3 +102,12 @@
 	
 	
 	</div>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/gallery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	</body>
+
+</html>
