@@ -98,12 +98,12 @@ include "work_submit_exec.php";
 <h5 class="text-primary" style="float">This site has been built by Brian murithi &copy; 2020</h5>
 </div>
 	  </div>
-	  
+
+	  <script src="js/bootstrap.min.js"></script>	  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 	<script src="js/jquery.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
 	
 	
 	

@@ -36,10 +36,10 @@
 	<div class="row vertical-offset-100">
 			<div class="col-md-4 col-md-offset-4">
 					<div class="panel panel-default">
-									<div class=panel-heading"> 
+									<div class="panel-heading"> 
 										<h3 class="panel-title" style="padding-left:6px; padding-top:5px; font-family:Roboto;font-size:22px;"><center>
 										Users Login</center></h3>
-												<hr/ style="color:#000000">
+												<hr style="color:#000000"/>
 									</div>
 						<div class="panel-body"> 
 								<form action="login_user_exec.php" accept-charset="UTF-8"  role="form" enctype="multipart/form-data" method="POST">
@@ -96,11 +96,11 @@
 </div>
 	  </div>
 	
-	<script src="js/bootstrap.min.js"></script>  
+	<!-- <script src="js/bootstrap.min.js"></script>   -->
+   <script src="js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
 	
 	
 	
