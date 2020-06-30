@@ -33,3 +33,76 @@ div.navbar-header a.navbar-brand{
 div.navbar-header a.navbar-brand:hover{
     color: rgb(189, 179, 88);
 }
+
+/*contactform style*/
+.contact-left  input[type="text"], .contact-left  textarea {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    outline: none;
+}
+.contact-left textarea {
+    resize: none;
+    height: 150px;
+}
+.contact-left h4 {
+    font-size: 2em;
+    margin: 0 0 1em;
+	color: #F58703;
+}
+.contact-left p {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.contact-left ul {
+    padding: 1em 0 0;
+    margin: 0;
+}
+.contact-left ul li {
+    list-style-type: none;
+    margin: 0 0 5px;
+    font-size: 1em;
+	    color: #777;
+}
+.contct-info ul li a {
+    font-size: 1em;
+    color: #777;
+}
+.contact-left input[type="submit"], .contact-left input[type="reset"] {
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 0;
+    width: 19.68%;
+    background: #49872E;
+    border: none;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+	letter-spacing: 1px;
+	    margin-top: 1em;
+}
+.contact-left input[type="submit"]:hover , .contact-left input[type="reset"]:hover {
+    background: #F58703;
+}
+/*--responsive--*/
+@media(max-width:1440px){
+	
+}
+@media(max-width:1366px){
+	
+}
+@media(max-width:1280px){
+	
+}
+.ban-grid h4,.student-grid h4,.new-right h4,.footer-grid h4,.about-grid h4,.what-grid h4,.staff-right h4,.ser-grid h4,.ourser-grid h4,.course-grid1 h4,.contact-left h4  {
+    font-size: 1.8em;
+}
+h2.tittle {
+    font-size: 3.2em;
+}
+.ban-grid p,.student-grid p,.new-left p,.new-right p,.footer-grid p,.about-grid p,.what-grid p,.statistic p,.ser-grid p,.ourser-grid p,.course-grid1 p,.contact-left p{
+    font-size: 0.965em;
+}
