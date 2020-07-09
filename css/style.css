@@ -5,12 +5,16 @@ nav.navbar.navbar-inverse{
     z-index: 2;
 }
 div#bootstrap-override,nav+div{
-    padding-top: 5%;
+    padding-top: 60px;
     z-index: 1;
 }
 @media screen and (max-width: 960px){
     nav.navbar.navbar-inverse{
         position: relative;
+    }
+    div#bootstrap-override,nav+div{
+        padding-top: 10px;
+        z-index: 1;
     }
 }
 @font-face {
@@ -32,4 +36,7 @@ div.navbar-header a.navbar-brand{
 
 div.navbar-header a.navbar-brand:hover{
     color: rgb(189, 179, 88);
+}
+div.form-group button{
+    min-width: 200px;
 }
