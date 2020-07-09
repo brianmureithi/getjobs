@@ -37,3 +37,6 @@ div.navbar-header a.navbar-brand{
 div.navbar-header a.navbar-brand:hover{
     color: rgb(189, 179, 88);
 }
+div.form-group button{
+    min-width: 200px;
+}
