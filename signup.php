@@ -147,7 +147,7 @@
 	
 	    <div class="row">
 	      <div class="modal-footer col-xs-12">
-          <h5 class="text-primary">This site has been built by Brian murithi &copy; 2020</h5>
+          <h5 class="text-primary">This site has been built by Brian Murithi and Kenneth Kimari &copy; 2020</h5>
         </div>
 	    </div>
 	

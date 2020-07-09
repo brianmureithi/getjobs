@@ -101,7 +101,7 @@
 		<br>
 		<div class="row" > 
 			<div class="modal-footer col-xs-12">
-				<h5 class="text-primary" style="float">This site has been built by Brian murithi and Kenneth Kimari &copy; 2020</h5>
+				<h5 class="text-primary" style="float">This site has been built by Brian Murithi and Kenneth Kimari &copy; 2020</h5>
 			</div>
 		</div>
 	</div>

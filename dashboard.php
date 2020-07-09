@@ -99,7 +99,7 @@ include "work_submit_exec.php";
 		<div class="row">
 		<div class="col-xs-12">
 	  		<div class="modal-footer">
-				<h5 class="text-primary" style="float">This site has been built by Brian murithi and Kenneth Kimari&copy; 2020</h5>
+				<h5 class="text-primary" style="float">This site has been built by Brian Murithi and Kenneth Kimari&copy; 2020</h5>
 			</div>
 		</div>
 		</div>

@@ -43,8 +43,8 @@
           <div class="container-fluid">
 	        <div class="row"> 
             <div class="col-md-6 col-xs-12">
-              <legend class="text-center" style="font-family:Roboto;font-size:25px;color:#8b0000"><i>Users signup, 
-              <span class="req">welcome to our community</i></span>
+              <legend class="text-center" style="font-family:Roboto;font-size:25px;color:#8b0000">Users signup, 
+              <span class="req">welcome to our community</span>
               </legend>  
               <!-- <div class="form-group">
               <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
@@ -142,7 +142,7 @@
 	
 	  <div class="row">
 	    <div class="modal-footer col-xs-12">
-        <h5 class="text-primary">This site has been built by Brian murithi and Kenneth Kimari &copy; 2020</h5>
+        <h5 class="text-primary">This site has been built by Brian Murithi and Kenneth Kimari &copy; 2020</h5>
       </div>
 	  </div>
 	
