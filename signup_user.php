@@ -23,7 +23,7 @@
 			    <li><a href="index.php" style="color:fff">Home</a></li>
 			    <li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php">Portal <span class="caret"></span></a>
 				    <ul class="dropdown-menu">
-				      <li><a href="login_user.php">Client</a></li>
+				      <li><a href="login_user.php?expert_id='null'">Client</a></li>
 				      <li><a href="login.php" >Expert</a></li>
 				    </ul>
 			    </li>
@@ -31,7 +31,7 @@
 			  </ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="signup_user.php"  class="active"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login_user.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<li><a href="login_user.php?expert_id='null'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
         </div>
       </div> 

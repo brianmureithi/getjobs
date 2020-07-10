@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<title>Kazikwetu</title>
@@ -20,7 +21,7 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 			  			<li><a href="index.php" style="color:fff">Home</a></li>
-			  			<li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php">Portal <span class="caret"></span></a>
+			  			<li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login_user.php?expert_id='null'">Portal <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 				  				<li><a href="login_user.php">Client</a></li>
 				  				<li><a href="login.php" >Expert</a></li>
@@ -38,7 +39,7 @@
   
   
   
- 
+	
 	<div class="container">
 		<div class="row vertical-offset-100">
 			<div class="col-md-4 col-md-offset-4">
@@ -49,8 +50,13 @@
 						<hr style="color:#000000"/>
 					</div>
 					<div class="panel-body"> 
-						<form action="login_user_exec.php" accept-charset="UTF-8"  role="form" enctype="multipart/form-data" method="POST">
-							<fieldset>
+					<?php
+                       
+						?>
+						
+						<form action="login_user_exec.php?expert_id=<?php echo $_GET['expert_id']; ?> " accept-charset="UTF-8"  role="form" enctype="multipart/form-data" method="post">
+						
+						<fieldset>
 								<div class="form-group"> 
 									<input class="form-control" placeholder="E-mail" name="email" type="text">
 								</div>
@@ -65,11 +71,13 @@
 									</label>
 								</div>
 															
-								<input class="btn btn-lg btn-success btn-block" type="submit" value="login" name="login"> <br>
+								<input class="btn btn-lg btn-success btn-block"  type="submit" value="login" name="login"> <br>
 												
 								<a href="signup_user.php"><button type="button" class="btn btn-lg btn-danger btn-block"> Sign up</button></a>
 							</fieldset> 
 						</form>
+					
+							
 					</div>
     
 				</div>

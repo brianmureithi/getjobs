@@ -25,12 +25,12 @@ include "session.php";
 				<div class="collapse navbar-collapse" id="myNavbar">
 			    <ul class="nav navbar-nav">
 			      <li  class="active" ><a href="work_submission.php" style="color:fff">Work-Submision</a></li>
-			      <li><a href="login_user.php">Logout</a></li>
+			      <li><a href="users_logout.php">Logout</a></li>
 			      <li><a href="contact.php">Contact us</a></li>
 			      </ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="signup_user.php"  class="active"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-							<li class="active"><a href="login_user.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							<li class="active"><a href="login_user.php?expert_id='null'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
       </div>

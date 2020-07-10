@@ -74,7 +74,7 @@ require_once ("./dbcon.php");
 						 echo ' <div class="col-xs-12" >
 						 <tr>
 						  
-  	<td><a href="work_submission.php?expert_id='.$row["expert_id"].'"><h5 style="font-family:Roboto; font-size:15px;color:#000000;">'.$row['firstname'].' '.$row['lastname'].'</h5></a></td>
+  	<td><a href="login_user.php?expert_id='.$row["expert_id"].'"><h5 style="font-family:Roboto; font-size:15px;color:#000000;">'.$row['firstname'].' '.$row['lastname'].'</h5></a></td>
        <td><h5 style="font-family:Roboto; font-size:15px;color:#000000;">'.$row['county'].'</h5></td>
 		<td><h5 style="font-family:Roboto; font-size:15px;color:#000000;">+254'.$row['phonenumber'].'</h5></td>
 	 </tr>

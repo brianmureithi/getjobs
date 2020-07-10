@@ -45,7 +45,7 @@ require_once('functions.php');
 			  		<li class="active"><a href="index.php" style="color:fff">Home</a></li>
 			  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-				  			<li><a href="login_user.php">Client</a></li>
+				  			<li><a href="login_user.php?expert_id='null'">Client</a></li>
 				  			<li><a href="login.php" >Expert</a></li>
 						</ul>
 			  		</li>
@@ -53,7 +53,7 @@ require_once('functions.php');
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 					<li><a href="signup_user.php" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login_user.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<li><a href="login_user.php?expert_id='null'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
              		</ul>
 				</div>
   			</div>
