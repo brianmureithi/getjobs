@@ -1,5 +1,6 @@
 <?php
 require_once('functions.php');
+$url = isset($_GET['url']) ? $_GET['url'] : null;
 ?>
 <html>
 	<head>
@@ -45,7 +46,7 @@ require_once('functions.php');
 			  		<li class="active"><a href="index.php" style="color:fff">Home</a></li>
 			  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-				  			<li><a href="login_user.php?expert_id='null'">Client</a></li>
+				  			<li><a href="login_user.php?expert_id=0">Client</a></li>
 				  			<li><a href="login.php" >Expert</a></li>
 						</ul>
 			  		</li>
@@ -53,7 +54,7 @@ require_once('functions.php');
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 					<li><a href="signup_user.php" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login_user.php?expert_id='null'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<li><a href="login_user.php?expert_id=0"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
              		</ul>
 				</div>
   			</div>
@@ -71,7 +72,7 @@ require_once('functions.php');
 					<img class="img-responsive" src="assets/img4.jpg" alt="Mountains" style="width:100%">
 				</div>
 				<div>
-					<a href="login_user.php" ><button type="button"class="btn btn-primary" style="width:100px !important">Login</button></a>
+					<a href="login_user.php?expert_id=0" ><button type="button"class="btn btn-primary" style="width:100px !important">Login</button></a>
 					<a href="signup_user.php"><button type="button" class="btn btn-danger" style="width:100px !important">Sign up</button></a>
 				</div>
 			</div>

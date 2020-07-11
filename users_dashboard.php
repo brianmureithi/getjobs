@@ -29,7 +29,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="signup_user.php"  class="active"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						<li class="active"><a href="login-user.php?expert_id='null'"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li class="active"><a href="login-user.php?expert_id=0"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 					</ul>
 				</div>
   			</div>
@@ -75,9 +75,9 @@
 						
 			<div class="col-md-9 col-xs-12" style="border:groove 1px #000">
 				<fieldset>
-					<legend class="text-center" style="font-family:Roboto;font-size:20px;color:#8b0000"><i>Welcome what kind
+					<legend class="text-center" style="font-family:Roboto;font-size:20px;color:#8b0000">Welcome what kind
 					of expert are you looking for? Tell us the type and county you would like.
-    				<span class="req"></i></span></legend>  
+    				<span class="req"></span></legend>  
 					<div class="col-xs-12">
 						<div class=" well search-icon form-group">
 							<label for="sel1" style="margin-right:15px">Expert: </label> 

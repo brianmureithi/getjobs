@@ -58,7 +58,7 @@
 			  </ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="signup_user.php"  class="active"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li class="active"><a href="login_user.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					<li class="active"><a href="login_user.php?expert_id=0"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
       </div>
     </div>

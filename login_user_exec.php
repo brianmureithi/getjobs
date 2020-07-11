@@ -12,8 +12,7 @@ $inactive = 1200;
 
 if(isset($_POST["login"])){
 	$expertid=$_GET['expert_id'];
-	if((!$expertid)&&($_GET['expert_id']='null')){
-		$expertid=$_REQUEST['expert_id'];
+	if($_GET['expert_id']==0){
 		$email = filter_var($_POST["email"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$password = filter_var($_POST["password"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$pass = md5($password);
@@ -51,7 +50,7 @@ header("location: users_dashboard.php");
 ?>
  <script>
  alert('!!! You have entered the wrong email or password please try again');
-window.location="login_user.php?=error"
+window.location="login_user.php?expert_id=0"
 
  </script>
  <?php
@@ -60,8 +59,10 @@ window.location="login_user.php?=error"
 }
 		
 		
-	} else{
-		$expertid=$_REQUEST['expert_id'];
+	} 
+	
+	else if($_GET['expert_id']===$_GET['expert_id']){
+		
 		$email = filter_var($_POST["email"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$password = filter_var($_POST["password"],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$pass = md5($password);
@@ -92,19 +93,20 @@ $county=$row['county'];
 /*$sql = mysqli_query($dbhandle,"INSERT INTO loggedin_users(expert_id,firstname,lastname,email,county,expertise,password,prof_pic,loggedin_date) VALUES ('".$id."','".$firstname."',
 '".$lastname."','".$email."','".$county."','".$expertise."','".$pass."','".$profpic."',now())") or die (mysqli_error($dbhandle));*/
 
-
+$expertid=$_GET['expert_id'];
 header("location: work_submission.php?expert_id=$expertid");
 
 
 }	else{
 ?>
  <script>
+ $expertid=$_GET['expert_id'];
  alert('!!! You have entered the wrong email or password please try again');
-window.location="login_user.php?=error"
-
  </script>
+ 
  <?php
-     
+  $expertid=$_GET['expert_id'];
+   header("location: login_user.php?expert_id=$expertid");  
 		
 }
 	
