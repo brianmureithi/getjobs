@@ -53,13 +53,13 @@ $target="assets/profile/".basename($_FILES['profile']['name']);
 
                         }
 	echo"<script>
-		window.location='login_user.php?success';
+		window.location='login_user.php?expert_id=0';
 		</script>"; 
 	
     
     	
 		exit();	}
-		header('location:login_user.php?success');
+		header('location:login_user.php?expert_id=0');
 					
 	}
 
