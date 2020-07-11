@@ -40,4 +40,7 @@ div.navbar-header a.navbar-brand:hover{
 div.form-group button{
     min-width: 200px;
 }
+div.col-xs-12.row-grid{
+    padding-top: 10px;
+}
 

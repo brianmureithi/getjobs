@@ -100,13 +100,12 @@ header("location: work_submission.php?expert_id=$expertid");
 }	else{
 ?>
  <script>
- $expertid=$_GET['expert_id'];
  alert('!!! You have entered the wrong email or password please try again');
+
+ window.location="login_user.php?expert_id=<?php echo $expertid=$_GET['expert_id'];?>"
  </script>
  
  <?php
-  $expertid=$_GET['expert_id'];
-   header("location: login_user.php?expert_id=$expertid");  
 		
 }
 	
