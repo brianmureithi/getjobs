@@ -21,7 +21,7 @@
   				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.php" style="color:fff">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="login_user.php?expert_id=0">Client</a></li>
@@ -105,9 +105,9 @@
 	</div>
 	<!-- closes container -->
 </body>
-							  	<script src="js/bootstrap.min.js"></script>
 									<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-									<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 									<script src="js/jquery.min.js"></script>
+									<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+							  		<script src="js/bootstrap.min.js"></script>
 	
 </html>
