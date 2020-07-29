@@ -48,14 +48,14 @@
 									{
 											  echo '<div class="">
 											  <div class="">
-											  <img style="height:150px!important;"src="',$_SESSION['prof_pic'],'" alt=" ', $_SESSION['firstname'],'\'s Profile Image">
+											  <a href="prof_update.php"><img style="height:150px!important;"src="',$_SESSION['prof_pic'],'" alt=" ', $_SESSION['firstname'],'\'s Profile Image"></a>
 											  </div>
 											  </div>';
 									}
 											else{ 
 													echo'<div class="">
 													 <div class="thumbnail">
-													<a href="update-profile"><img src="images/profile/user.png" alt="profile" style="width:100%;"></a>
+													<a href="prof_update.php"><img src="images/profile/user.png" alt="profile" style="width:100%;"></a>
 													 </div>
 													</div>';
 												}

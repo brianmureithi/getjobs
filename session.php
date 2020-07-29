@@ -15,7 +15,7 @@ include_once("./dbcon.php");
 //Check whether the session variable SESS_MEMBER_ID is present or not
 if (!isset($_SESSION['email'])) { ?>
 <script>
-window.location = "login_user.php";
+window.location = "login_user.php?expert_id=0";
 </script>
 <?php
 }
