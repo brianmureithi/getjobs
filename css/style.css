@@ -44,3 +44,13 @@ div.col-xs-12.row-grid{
     padding-top: 10px;
 }
 
+#profilePic , #profileDisplay{
+    border-radius: 50%;
+    object-fit: cover;
+    height:150px; 
+    width:150px;
+}
+
+a:visited #profilePic{
+    text-decoration: none;
+}

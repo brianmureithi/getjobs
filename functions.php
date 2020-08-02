@@ -252,6 +252,67 @@ require_once ("./dbcon.php");
 					  }
 					  
 		   }
+	//code to source profile pic from database
+	public static function getprofilepicture($userid){
+		global $dbhandle;
+		$query_search = "select * from users_tbl where user_id = {$userid}";
+		$query_exec = mysqli_query($dbhandle,$query_search);
+						if(!empty($query_exec))
+						{
+								if(mysqli_num_rows($query_exec)>0)
+								{
+									$row = mysqli_fetch_array($query_exec);
+									$picpath = $row['prof_pic'];
+									$fname = $row['firstname'];
+									if (!($picpath == ""))
+									{
+											  echo '<div class="">
+											  <div class="">
+											  <a href="prof_update.php"><img id="profilePic" src="'.$picpath.'" alt=" '. $fname.'\'s Profile Image" title=" '. $fname.'\'s Profile Image"></a>
+											  </div>
+											  </div>';
+									}
+											else{ 
+													echo'<div class="">
+													 <div class="thumbnail">
+													<a href="prof_update.php"><img id="profilePic" src="images/profile/user.png" alt="profile" style="width:100%;"></a>
+													 </div>
+													</div>';
+												}
+								}
+							}
+		}
+	//code to source profile pic for experts
+	public static function getexpertprofilepicture($expertid){
+		global $dbhandle;
+		$query_search = "select * from expert_tbl where expert_id = {$expertid}";
+		$query_exec = mysqli_query($dbhandle,$query_search);
+						if(!empty($query_exec))
+						{
+								if(mysqli_num_rows($query_exec)>0)
+								{
+									$row = mysqli_fetch_array($query_exec);
+									$picpath = $row['prof_pic'];
+									$fname = $row['firstname'];
+									if (!($picpath == ""))
+									{
+											  echo '<div class="">
+											  <div class="">
+											  <a href="prof_update_expert.php"><img id="profilePic" src="'.$picpath.'" alt=" '. $fname.'\'s Profile Image" title=" '. $fname.'\'s Profile Image"></a>
+											  </div>
+											  </div>';
+									}
+											else{ 
+													echo'<div class="">
+													 <div class="thumbnail">
+													<a href="prof_update_expert.php"><img id="profilePic" src="images/profile/user.png" alt="profile" style="width:100%;"></a>
+													 </div>
+													</div>';
+												}
+								}
+								else echo "Error in query";
+							}
+		}
 	 
 	 
    }
