@@ -43,23 +43,7 @@
 			<div class="col-md-3 col-xs-12">
 				<aside class="comments" style="border:smooth 10px #000;">
 	 
-							<?php 
-									if (empty($_SESSION['prof_pic']) === false)
-									{
-											  echo '<div class="">
-											  <div class="">
-											  <img style="height:150px!important;"src="',$_SESSION['prof_pic'],'" alt=" ', $_SESSION['firstname'],'\'s Profile Image">
-											  </div>
-											  </div>';
-									}
-											else{ 
-													echo'<div class="">
-													 <div class="thumbnail">
-													<a href="update-profile"><img src="images/profile/user.png" alt="profile" style="width:100%;"></a>
-													 </div>
-													</div>';
-												}
-			               ?>
+							<?php Kazikwetu::getprofilepicture($_SESSION['id'])   ?>
 					<h5><u>Welcome <?php echo$_SESSION['firstname'];?></u></h5><hr>
 					<a href="users_job_hist.php?user_id= <?php echo$_SESSION['id'];?>" ><button style="min-width:180px !important;
 						max-width:180px !important;"class="btn btn-lg btn-primary" 
