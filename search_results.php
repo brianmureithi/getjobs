@@ -23,10 +23,11 @@
       </thead>
       <tbody >
       <tr>
-                <?php Kazikwetu::listexperts($expert,$county); ?>
+                <?php Kazikwetu::listexpertsdashboard($expert,$county); ?>
       </tr>
       </tbody>
     </table>
  
   </div> 
 </div> 
+
