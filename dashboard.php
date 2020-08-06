@@ -63,8 +63,8 @@ include "work_submit_exec.php";
 			</div>
 	
 			<div class="col-md-9 col-xs-12">
-			<div class="content" style="border:groove 1px #000">
-				<h5 style="padding:5px">Current Works</h5>
+			<div class="content" style="border:ridge 2px">
+				<h2 style="font-family:candara;text-align:center;color:#49872E">All your Works</h2>
 
    				<?php Kazikwetu::getsentjobs($_SESSION['id'])?>
  			</div>

@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
 		window.location = './contact.php?success';
 	}
 	</script>"; 
+	
     
   }   
   else{

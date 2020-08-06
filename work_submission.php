@@ -78,8 +78,12 @@ include "session.php";
                 <div id="errLast"></div>
               </div>
               <div class="form-group">
+				        <label for="exampleSelect1">Expert name</label>
+				        <input class="form-control" id="exampleSelect1" style="color:	#8B0000;" readonly name="expertname" value="<?php echo getexpertname();?>"/>
+              </div>
+              <div class="form-group">
 				        <label for="exampleSelect1">Expertise</label>
-				        <input class="form-control" id="exampleSelect1" style="color:#008B8B;" readonly name="expertise" value="<?php echo getexpertise();?>"/>
+				        <input class="form-control" id="exampleSelect1" style="color:	#8B0000;text-align:left" readonly name="expertise" value="<?php echo getexpertise();?>"/>
               </div>
     
 	            <div class="form-group">
@@ -121,9 +125,34 @@ include "session.php";
                {
                    echo 'error in query';
                }}?>
+               <?php
+                function getexpertname(){
+                  $expertid=$_GET['expert_id'];
+                  global $dbhandle;
+                  $query_search = "select * from expert_tbl where expert_id = {$expertid}";
+                  $query_exec = mysqli_query($dbhandle,$query_search)or die(mysqli_error($dbhandle));
+                  if(!empty($query_exec))
+                  {
+                      if(mysqli_num_rows($query_exec)>0){
+                        while($row = mysqli_fetch_array($query_exec))
+                          echo '
+                        ' .$row['firstname'].'  ' .$row['lastname'].'';
+          
+             
+                    }
+                  else
+                    {
+                    echo'<h5 style="font-family:Roboto; font-size:16px;color:#DC143C;">No name for this expert</h5>';
+                     }    
+                  }
+                 else
+                 {
+                     echo 'error in query';
+                 }}?>
+               
 			        <div class="form-group">
 		            <label for="id"><span class="req"> </span>   Expert id: </label> 
-                  <input class="form-control" required type="text" style="color:#008B8B;"readonly name="expertid" placeholder="" 
+                  <input class="form-control" required type="text" style="color:	#8B0000;"readonly name="expertid" placeholder="" 
                   value="<?php echo"$expertid" ?>"	id = "id" 
                   onchange="email_validate(this.value);" />   
                 <div class="status" id="status"></div>
@@ -138,13 +167,21 @@ include "session.php";
         <br>
         <br><br><br/>
         <div class="col-md-6 col-xs-12">
-         <div class="form-group" style="">
-          <label for="files"><span class="req">
-          </span> Upload a file if theres is any required: </label>
-          <input type="file" name="myfile" class="form-control"/>
-          <span id="myfile" placeholder="file of any type is supported in our site" ></span>
-         </div>
+        <div class="form-group">
+				        <label for="exampleSelect1">Subject:</label>
+				        <input class="form-control" id="exampleSelect1" style="color:	#6B8E23;text-align:left"  name="subject"
+                 placeholder="Enter a short subject or topic of what this job entails" />
+              </div>
 
+         <div class="form-group">
+          <label for="files"><span class="req">
+          </span> Upload a file if there is any required: </label>
+          <input type="file" id="file"name="myfile" placeholder="file of any type is supported in our site" class="form-control"/>
+          <span id="file" placeholder="file of any type is supported in our site" >**In a case of multiple files use a zip file</span>
+
+         </div>
+         
+        
          <div class="form-group" >
           <textarea placeholder="Kindly enter any extra details you would like to communicate to the expert" rows="10" class="form-control" style="border:thin solid #000000;"name="message" ></textarea>
          </div>

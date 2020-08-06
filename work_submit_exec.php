@@ -5,8 +5,10 @@ if (isset($_POST['submit'])){
     session_start();
 extract($_POST);
 $region = filter_var($_POST['region'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-	$expertise = filter_var($_POST['expertise'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
-	$email = filter_var($_POST['email'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    $expertise = filter_var($_POST['expertise'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    $expertname = filter_var($_POST['expertname'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    $email = filter_var($_POST['email'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
+    $subject = filter_var($_POST['subject'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
 	$phone = filter_var($_POST['phonenumber'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
     $expid=  filter_var($_POST['expertid'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
       $message=  filter_var($_POST['message'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH);
@@ -19,16 +21,18 @@ $region = filter_var($_POST['region'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_
        $extension=pathinfo($filename,PATHINFO_EXTENSION);
        $file=$_FILES['myfile']['tmp_name'];
        $size= $_FILES['myfile']['size'];
+
        if(!in_array($extension,['zip','pdf','docx','jpeg','jpg','dwg','pptx','xls','accdb','js','php','css','html','png','gif'])){
            echo"Your file extension must be of type .zip,.docx,.pdf,.dwg,.pptx,.xls,/jpeg,.jpg,.accdb,.html,.js,.css or .php";
        }
        elseif($_FILES['myfile']['size']>(1024*1024*10)){
+
            echo"file too large,kindly upgrade to our premium account to access such services";
        }else{
-        $sql="INSERT INTO works_tbl(expert_id,users_id,user_fname,user_lname,user_email,user_phone,expert_region,
-        expertise,messages,files_name,file_size,time_of_submission) VALUES('". $expid."',$userid,'".$usersfname."',
-       '". $userslname."','". $email."','". $phone."','". $region."','". $expertise."','". $message."','$filename'
-        ,$size,now())"or die (mysqli_error($dbhandle));
+        $sql="INSERT INTO works_tbl(expert_id,users_id,user_fname,user_lname,user_email,user_phone,expert_region,expertname,
+        expertise,jobsubject,messages,files_name,file_size,time_of_submission,jobstatus) VALUES('". $expid."',$userid,'".$usersfname."',
+       '". $userslname."','". $email."','". $phone."','". $region."','". $expertname."','". $expertise."','". $subject."','". $message."','$filename'
+        ,$size,now(),'pending')"or die (mysqli_error($dbhandle));
         if (!mysqli_query($dbhandle,$sql))
         {      
            die('Error: ' . mysqli_error($dbhandle)); 
@@ -44,7 +48,25 @@ $region = filter_var($_POST['region'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_
                else{
                    echo "failed to send";
                }
+               if($sql=1){
+	
+                echo "<script>
+                if(confirm('Your work has successfully been sent to the selected expert')){
+                    window.location = './users_dashboard.php?success';
+                }
+                </script>"; 
+                
+                
+              }   else{
+                echo "<script>
+                  if(confirm('An error occured when sending your work, please try again')){
+                      window.location = './users_dashboard.php?failed';
+                  }
+                  </script>"; 
+                
+                }
            }
+
        }
     
      

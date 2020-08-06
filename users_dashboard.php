@@ -57,7 +57,7 @@
 	
 	
 						
-			<div class="col-md-9 col-xs-12" style="border:groove 1px #000">
+			<div class="col-md-9 col-xs-12" style="border:ridge 2px ">
 				<fieldset>
 					<legend class="text-center" style="font-family:Roboto;font-size:20px;color:#8b0000">Welcome what kind
 					of expert are you looking for? Tell us the type and county you would like.

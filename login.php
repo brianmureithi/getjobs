@@ -22,7 +22,7 @@
 			  		<li><a href="index.php" style="color:fff">Home</a></li>
 			  		<li  class="active" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.php">Portal <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-				  			<li><a href="login_user.php">Client</a></li>
+				  			<li><a href="login_user.php?expert_id=0">Client</a></li>
 				  			<li><a href="login.php" >Expert</a></li>
 						</ul>
 			  		</li>
