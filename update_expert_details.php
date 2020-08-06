@@ -21,7 +21,7 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
           elseif($_FILES['profile']['size']>(1024*1024*5)){
                die("file too large,kindly choose a smaller image");
           }else{
-               $query = "SELECT * FROM users_tbl WHERE user_id = '".$prof_id."'";
+               $query = "SELECT * FROM expert_tbl WHERE expert_id = '".$prof_id."'";
                $query_exec = mysqli_query($dbhandle,$query) or die (mysqli_error($dbhandle));
                if(mysqli_num_rows($query_exec)>0)
 		     {
@@ -39,7 +39,7 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
        
                if (move_uploaded_file($file_tmp,$target))
                {
-                    $sql = mysqli_query($dbhandle," UPDATE users_tbl SET prof_pic ='$target' where user_id = '$prof_id'") or die (mysqli_error($dbhandle));
+                    $sql = mysqli_query($dbhandle," UPDATE expert_tbl SET prof_pic ='$target' where expert_id = '$prof_id'") or die (mysqli_error($dbhandle));
 
                     echo "<font size = '3'><font color=\"#808080\">SAVED TO DATABASE"; 
        
@@ -50,14 +50,14 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
 
                }
                echo"<script>
-               window.location='users_dashboard.php?success';
+               window.location='dashboard.php?success';
                </script>"; 
           }
 
     
     }
     else if(!$image){
-        $sql = mysqli_query($dbhandle,"UPDATE users_tbl SET password= '".$pass."' where user_id = $prof_id") or die (mysqli_error($dbhandle));  
+        $sql = mysqli_query($dbhandle,"UPDATE expert_tbl SET password= '".$pass."' where expert_id = $prof_id") or die (mysqli_error($dbhandle));  
         if (move_uploaded_file($file_tmp=$_FILES['profile']['tmp_name'],$target))
         {
              echo "<font size = '3'><font color=\"#808080\">SAVED TO DATABASE"; 
@@ -69,7 +69,7 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
  
               }
                  echo"<script>
-                 window.location='users_dashboard.php?success';
+                 window.location='dashboard.php?success';
                  </script>"; 
  
     }
@@ -84,7 +84,7 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
           elseif($_FILES['profile']['size']>(1024*1024*5)){
                die("file too large,kindly choose a smaller image");
           }else{
-               $query = "SELECT * FROM users_tbl WHERE user_id = '".$prof_id."'";
+               $query = "SELECT * FROM expert_tbl WHERE expert_id = '".$prof_id."'";
                $query_exec = mysqli_query($dbhandle,$query) or die (mysqli_error($dbhandle));
                if(mysqli_num_rows($query_exec)>0)
 		     {
@@ -96,7 +96,7 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
                          }
                }
                mysqli_free_result($query_exec);
-        $sql = mysqli_query($dbhandle,"UPDATE users_tbl SET prof_pic='$target', password= '".$pass."' where user_id = $prof_id") or die (mysqli_error($dbhandle));  
+        $sql = mysqli_query($dbhandle,"UPDATE expert_id SET prof_pic='$target', password= '".$pass."' where expert_id = $prof_id") or die (mysqli_error($dbhandle));  
         if (move_uploaded_file($file_tmp=$_FILES['profile']['tmp_name'],$target))
         {
              echo "<font size = '3'><font color=\"#808080\">SAVED TO DATABASE"; 
@@ -104,11 +104,11 @@ $password = filter_var($_POST['password'],FILTER_SANITIZE_STRING, FILTER_FLAG_ST
         }
               else
               {
-                   echo "There was a problem changing image";
+                   die("There was a problem changing image");
  
               }
                  echo"<script>
-                 window.location='users_dashboard.php?success';
+                 window.location='dashboard.php?success';
                  </script>"; 
           }
  

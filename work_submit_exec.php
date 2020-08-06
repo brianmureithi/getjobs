@@ -21,10 +21,12 @@ $region = filter_var($_POST['region'],FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_
        $extension=pathinfo($filename,PATHINFO_EXTENSION);
        $file=$_FILES['myfile']['tmp_name'];
        $size= $_FILES['myfile']['size'];
-       if(!in_array($extension,['zip','pdf','docx','jpeg','jpg','dwg','pptx','xls','accdb','js','php','css','html'])){
-           echo"Your file extension must be of type .zip,.docx,.pdf,.dwg,.pptx,.xls,.jpeg,.jpg,.accdb,.html,.js,.css or .php";
+
+       if(!in_array($extension,['zip','pdf','docx','jpeg','jpg','dwg','pptx','xls','accdb','js','php','css','html','png','gif'])){
+           echo"Your file extension must be of type .zip,.docx,.pdf,.dwg,.pptx,.xls,/jpeg,.jpg,.accdb,.html,.js,.css or .php";
        }
-       else if($_FILES['myfile']['size']>10000000000){
+       elseif($_FILES['myfile']['size']>(1024*1024*10)){
+
            echo"file too large,kindly upgrade to our premium account to access such services";
        }else{
         $sql="INSERT INTO works_tbl(expert_id,users_id,user_fname,user_lname,user_email,user_phone,expert_region,expertname,

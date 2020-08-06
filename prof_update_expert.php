@@ -27,7 +27,7 @@ $prof_id= $_SESSION['id'];
     			</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-			  		<li class="active"><a href="index.php" style="color:fff">Home</a></li>
+			  		<li class="active"><a href="index.php">Home</a></li>
 			  		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portal <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 				  			<li><a href="login_user.php?expert_id=0">Client</a></li>
@@ -52,7 +52,7 @@ $prof_id= $_SESSION['id'];
 	function getprofile_pic($prof_id)
 		   { 
 					  global $dbhandle;
-					  $query_search = "select * from users_tbl where user_id = {$prof_id}";
+					  $query_search = "select * from expert_tbl where expert_id = {$prof_id}";
 					  $query_exec = mysqli_query($dbhandle,$query_search);
 			 if(!empty($query_exec))
 			 {
@@ -61,7 +61,7 @@ $prof_id= $_SESSION['id'];
 						  while($row = mysqli_fetch_array($query_exec))
 						  echo '<div class="profile_update">
 			
-						  <form action="update_user_details.php" method="post" id="fileform" role="form" enctype="multipart/form-data">
+						  <form action="update_expert_details.php" method="post" id="fileform" role="form" enctype="multipart/form-data">
 						  <fieldset>
 							<div class="container-fluid">
 							  <div class="row"> 
@@ -192,25 +192,20 @@ $prof_id= $_SESSION['id'];
 		  <!--end of querry-->
 </div>
 <div class="container-fluid" > 
-		<div class="row">
-		<div class="col-xs-12">
-	  		<div class="modal-footer">
-				<h5 class="text-primary" style="float">This site has been built by Brian Murithi and Kenneth Kimari&copy; 2020</h5>
-			</div>
-		</div>
-		</div>
-	  	</div>
+    <div class="row">
+    <div class="col-xs-12">
+          <div class="modal-footer">
+            <h5 class="text-primary" style="float:right;">This site has been built by Brian Murithi and Kenneth Kimari&copy; 2020</h5>
+        </div>
+    </div>
+    </div>
+      </div>
     
 </body>
-
-
-
-<script src="js/validate.js"></script>
 									<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 									<script src="js/jquery.min.js"></script>
 									<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 							  		<script src="js/bootstrap.min.js"></script>
 									<script src="js/scripts.js"></script>
-
 
 </html>
